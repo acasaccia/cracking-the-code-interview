@@ -1,2 +1,2 @@
-# cracking-the-code-interview
-Exercises from "Cracking the code Interview, 6th Edition"
+# cracking-the-coding-interview
+Exercises from "Cracking the Coding Interview, 6th Edition"
