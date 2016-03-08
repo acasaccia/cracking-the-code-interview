@@ -1,0 +1,22 @@
+{
+  "name": "cracking-the-coding-interview",
+  "version": "1.0.0",
+  "description": "Exercises from \"Cracking the Coding Interview, 6th Edition\"",
+  "main": "RunSpecs.js",
+  "scripts": {
+    "test": "node RunSpecs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acasaccia/cracking-the-coding-interview.git"
+  },
+  "author": "acasaccia@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acasaccia/cracking-the-coding-interview/issues"
+  },
+  "homepage": "https://github.com/acasaccia/cracking-the-coding-interview#readme",
+  "dependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
