@@ -1,20 +1,19 @@
 "use strict";
 
-[
-    '../01-arrays-and-strings/1.1.1.js',
-    '../01-arrays-and-strings/1.1.2.js',
-    '../01-arrays-and-strings/1.1.3.js'
-].forEach(function(source){
-    var module = require(source);
-    describe('is_unique', function(){
-        it('should just work™', function(){
-            expect(module.is_unique("")).toBe(true);
-            expect(module.is_unique("rofl")).toBe(true);
-            expect(module.is_unique("1234567890")).toBe(true);
-            expect(module.is_unique("asdfghjkl")).toBe(true);
-            expect(module.is_unique("trololol")).toBe(false);
-            expect(module.is_unique("roflcopter")).toBe(false);
-            expect(module.is_unique("lawl!")).toBe(false);
+var module = require('../01-arrays-and-strings/1.1.js');
+
+describe('is_unique', function(){
+    it('should just work™', function(){
+
+        ['is_unique', 'is_unique_no_space', 'is_unique_sorted'].forEach(function(method) {
+            expect(module[method]("")).toBe(true);
+            expect(module[method]("rofl")).toBe(true);
+            expect(module[method]("1234567890")).toBe(true);
+            expect(module[method]("asdfghjkl")).toBe(true);
+            expect(module[method]("trololol")).toBe(false);
+            expect(module[method]("roflcopter")).toBe(false);
+            expect(module[method]("lawl!")).toBe(false); 
         });
+
     });
 });
