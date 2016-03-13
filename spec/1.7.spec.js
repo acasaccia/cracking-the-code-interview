@@ -1,5 +1,6 @@
 "use strict";
 
+var clone = require('clone');
 var module = require('../01-arrays-and-strings/1.7.js');
 
 var original = [
@@ -18,6 +19,8 @@ describe('rotate_matrix', function(){
     it('should just work™', function(){
         expect(module.rotate_matrix(original)).toEqual(rotated);
         expect(module.rotate_matrix(rotated, true)).toEqual(original);
-        expect(module.rotate_matrix_in_place(original)).toEqual(rotated);
+        var original_copy = clone(original);
+        expect(module.rotate_matrix_in_place(original_copy)).toEqual(rotated);
+        expect(module.rotate_matrix_in_place(rotated, true)).toEqual(original);
     });
 });
