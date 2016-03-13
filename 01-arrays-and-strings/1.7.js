@@ -27,3 +27,27 @@ exports.rotate_matrix = function(matrix, anticlockwise) {
     }
     return new_matrix;
 };
+
+exports.rotate_matrix_in_place = function(matrix, anticlockwise) {
+    var dimension = matrix.length;
+    var rows = Math.floor(dimension / 2);
+    var tmp;
+    for (var i=0; i<rows; i++) {
+        var limit = Math.ceil(matrix[i].length / 2);
+        for (var j=0; j<limit; j++) {
+            tmp = matrix[i][j];
+            var from;
+            var to = {
+                r: i,
+                c: j
+            };
+            for (var c=0; c<3; c++) {
+                from = indexes_rotate(to.r, to.c, dimension, anticlockwise);
+                matrix[to.r][to.c] = matrix[from.r][from.c];
+                to = from;
+            }
+            matrix[to.r][to.c] = tmp;
+        }
+    }
+    return matrix;
+};

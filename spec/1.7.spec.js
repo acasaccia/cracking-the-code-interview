@@ -18,5 +18,6 @@ describe('rotate_matrix', function(){
     it('should just work™', function(){
         expect(module.rotate_matrix(original)).toEqual(rotated);
         expect(module.rotate_matrix(rotated, true)).toEqual(original);
+        expect(module.rotate_matrix_in_place(original)).toEqual(rotated);
     });
 });
