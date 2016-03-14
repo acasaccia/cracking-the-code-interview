@@ -1,5 +1,5 @@
 /**
- * The following together with 1.6.1 proves that a StringBuilder does not give a significant advantage in Javascript
+ * The following together with 1.6.1 proves that a StringBuilder does not give an advantage in Javascript
  * http://stackoverflow.com/questions/51185/are-javascript-strings-immutable-do-i-need-a-string-builder-in-javascript
  */
 var big_string = require("fs").readFileSync(process.cwd() + "/spec/data/big_string.txt", "utf-8");
