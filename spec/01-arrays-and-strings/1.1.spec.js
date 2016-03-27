@@ -1,6 +1,6 @@
 "use strict";
 
-var module = require('../01-arrays-and-strings/1.1.js');
+var module = require('../../01-arrays-and-strings/1.1.js');
 
 describe('is_unique', function(){
     it('should just work™', function(){

@@ -1,6 +1,6 @@
 "use strict";
 
-var module = require('../01-arrays-and-strings/1.8.js');
+var module = require('../../01-arrays-and-strings/1.8.js');
 
 var original = [
     [ 0,   1,  2,  3,  4,  5,  6,  7,  8,  9 ],

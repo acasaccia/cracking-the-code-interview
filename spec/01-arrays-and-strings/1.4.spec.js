@@ -1,6 +1,6 @@
 "use strict";
 
-var module = require('../01-arrays-and-strings/1.4.js');
+var module = require('../../01-arrays-and-strings/1.4.js');
 
 describe('palindrome_permutation', function(){
     it('should just work™', function(){
