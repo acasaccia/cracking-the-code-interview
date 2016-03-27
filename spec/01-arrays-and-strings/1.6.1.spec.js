@@ -3,7 +3,7 @@
  * http://stackoverflow.com/questions/51185/are-javascript-strings-immutable-do-i-need-a-string-builder-in-javascript
  */
 var big_string = require("fs").readFileSync(process.cwd() + "/spec/data/big_string.txt", "utf-8");
-var module = require('../../01-arrays-and-strings/1.6.js');
+var module = require('../../01-arrays-and-strings/1.6');
 
 console.time("Compress: Concat");
 module.compress(big_string);

@@ -1,6 +1,6 @@
 "use strict";
 
-var module = require('../../01-arrays-and-strings/1.7.js');
+var module = require('../../01-arrays-and-strings/1.7');
 
 var original = [];
 var dimension = 1000;

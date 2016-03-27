@@ -1,4 +1,4 @@
-var module = require('../../01-arrays-and-strings/1.2.js');
+var module = require('../../01-arrays-and-strings/1.2');
 
 describe('check_permutation', function(){
     it('should just work™', function(){

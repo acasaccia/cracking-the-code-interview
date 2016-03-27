@@ -1,6 +1,6 @@
 "use strict";
 
-var module = require('../../01-arrays-and-strings/1.3.js');
+var module = require('../../01-arrays-and-strings/1.3');
 
 describe('urlify', function(){
     it('should just work™', function(){

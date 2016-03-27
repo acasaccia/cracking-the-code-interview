@@ -1,6 +1,6 @@
 "use strict";
 
-var SingleLinkedList = require('../../02-linked-lists/lib/sll.js');
+var SingleLinkedList = require('../../02-linked-lists/lib/sll');
 
 describe('SingleLinkedList', function(){
 

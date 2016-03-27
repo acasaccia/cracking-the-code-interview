@@ -1,6 +1,6 @@
 "use strict";
 
-var one_away = require('../../01-arrays-and-strings/1.5.js');
+var one_away = require('../../01-arrays-and-strings/1.5');
 
 describe('one_away', function(){
     it('should just work™', function(){
