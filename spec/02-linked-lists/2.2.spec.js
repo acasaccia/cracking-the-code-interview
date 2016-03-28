@@ -35,7 +35,7 @@ describe('kth_to_last_recursive', function(){
 
     it('should just work™', function(){
 
-        var list = new SingleLinkedList();
+        var list = new sll();
 
         list.add(10);
         list.add(9);

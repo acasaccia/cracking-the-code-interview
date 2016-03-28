@@ -36,7 +36,7 @@ describe('remove_duplicates_no_space', function(){
 
     it('should just work™', function(){
 
-        var list = new SingleLinkedList();
+        var list = new sll();
 
         list.add(1);
         list.add(2);
