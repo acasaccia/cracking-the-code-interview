@@ -9,24 +9,17 @@ describe('remove_duplicates', function(){
 
         var list = new sll();
 
-        list.add(1);
-        list.add(2);
-        list.add(1);
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
+        list.append(1);
+        list.append(2);
+        list.append(1);
+        list.append(1);
+        list.append(2);
+        list.append(3);
+        list.append(4);
 
+        expect(list.display()).toBe("1 -> 2 -> 1 -> 1 -> 2 -> 3 -> 4");
         list = module.remove_duplicates(list);
-        var current = list.head;
-        expect(current.value).toBe(4);
-        current = current.next;
-        expect(current.value).toBe(3);
-        current = current.next;
-        expect(current.value).toBe(2);
-        current = current.next;
-        expect(current.value).toBe(1);
-        expect(current.next).toBeUndefined();
+        expect(list.display()).toBe("1 -> 2 -> 3 -> 4");
 
     });
 
@@ -38,24 +31,17 @@ describe('remove_duplicates_no_space', function(){
 
         var list = new sll();
 
-        list.add(1);
-        list.add(2);
-        list.add(1);
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
+        list.append(1);
+        list.append(2);
+        list.append(1);
+        list.append(1);
+        list.append(2);
+        list.append(3);
+        list.append(4);
 
+        expect(list.display()).toBe("1 -> 2 -> 1 -> 1 -> 2 -> 3 -> 4");
         list = module.remove_duplicates_no_space(list);
-        var current = list.head;
-        expect(current.value).toBe(4);
-        current = current.next;
-        expect(current.value).toBe(3);
-        current = current.next;
-        expect(current.value).toBe(2);
-        current = current.next;
-        expect(current.value).toBe(1);
-        expect(current.next).toBeUndefined();
+        expect(list.display()).toBe("1 -> 2 -> 3 -> 4");
 
     });
 
