@@ -1,13 +1,13 @@
 "use strict";
 
-var SingleLinkedList = require('../../02-linked-lists/lib/single-linked-list');
+var sll = require('../../02-linked-lists/lib/single-linked-list');
 var module = require('../../02-linked-lists/2.1');
 
 describe('remove_duplicates', function(){
 
     it('should just work™', function(){
 
-        var list = new SingleLinkedList();
+        var list = new sll();
 
         list.add(1);
         list.add(2);

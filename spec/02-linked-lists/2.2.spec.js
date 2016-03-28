@@ -1,13 +1,13 @@
 "use strict";
 
-var SingleLinkedList = require('../../02-linked-lists/lib/single-linked-list');
+var sll = require('../../02-linked-lists/lib/single-linked-list');
 var module = require('../../02-linked-lists/2.2');
 
 describe('kth_to_last', function(){
 
     it('should just work™', function(){
 
-        var list = new SingleLinkedList();
+        var list = new sll();
 
         list.add(10);
         list.add(9);
