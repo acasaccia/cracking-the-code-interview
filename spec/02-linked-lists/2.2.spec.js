@@ -1,13 +1,13 @@
 "use strict";
 
-var sll = require('../../02-linked-lists/lib/single-linked-list');
+var SLL = require('../../02-linked-lists/lib/single-linked-list');
 var module = require('../../02-linked-lists/2.2');
 
 describe('kth_to_last', function(){
 
     it('should just work™', function(){
 
-        var list = new sll();
+        var list = new SLL();
 
         list.append(1);
         list.append(2);
@@ -35,7 +35,7 @@ describe('kth_to_last_recursive', function(){
 
     it('should just work™', function(){
 
-        var list = new sll();
+        var list = new SLL();
 
         list.append(1);
         list.append(2);

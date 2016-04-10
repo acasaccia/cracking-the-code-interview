@@ -7,16 +7,15 @@
 // Input:   3 -> 5 -> 8 -> 5 -> 10 -> 2 -> 1 [partition 5]
 // Output:  3 -> 1 -> 2 -> 10 -> 5 -> 5 -> 8
 
-var sll = require('./lib/single-linked-list');
-
+var SLL = require('./lib/single-linked-list');
 
 exports.partition = function(list, pivot) {
-    var left = new sll();
-    var right = new sll();
+    var left = new SLL();
+    var right = new SLL();
     var current = list.head;
     while (current) {
         if (current.value < pivot) {
-            if (left.head === null) {
+            if (!left.head) {
                 left.head = current;
                 left.tail = current;
             } else {
@@ -24,7 +23,7 @@ exports.partition = function(list, pivot) {
                 left.tail = current;
             }
         } else {
-            if (right.head === null) {
+            if (!right.head) {
                 right.head = current;
                 right.tail = current;
             } else {

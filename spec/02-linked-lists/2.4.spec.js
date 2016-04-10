@@ -1,13 +1,13 @@
 "use strict";
 
-var sll = require('../../02-linked-lists/lib/single-linked-list');
+var SLL = require('../../02-linked-lists/lib/single-linked-list');
 var module = require('../../02-linked-lists/2.4');
 
 describe('partition', function(){
 
     it('should just work™', function(){
 
-        var list = new sll();
+        var list = new SLL();
 
         list.append(3);
         list.append(5);

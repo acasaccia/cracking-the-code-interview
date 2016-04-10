@@ -1,13 +1,13 @@
 "use strict";
 
-var sll = require('../../02-linked-lists/lib/single-linked-list');
+var SLL = require('../../02-linked-lists/lib/single-linked-list');
 var module = require('../../02-linked-lists/2.1');
 
 describe('remove_duplicates', function(){
 
     it('should just work™', function(){
 
-        var list = new sll();
+        var list = new SLL();
 
         list.append(1);
         list.append(2);
@@ -29,7 +29,7 @@ describe('remove_duplicates_no_space', function(){
 
     it('should just work™', function(){
 
-        var list = new sll();
+        var list = new SLL();
 
         list.append(1);
         list.append(2);

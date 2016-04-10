@@ -17,12 +17,12 @@
 
 exports.sum_lists = function(list1, list2) {
 
-    var sll = require('./lib/single-linked-list');
+    var SLL = require('./lib/single-linked-list');
 
     var digit1 = list1.head;
     var digit2 = list2.head;
 
-    var result = new sll();
+    var result = new SLL();
     var carry = 0;
     var digits_sum;
 
@@ -40,12 +40,12 @@ exports.sum_lists = function(list1, list2) {
 
 exports.sum_dllists = function(list1, list2) {
 
-    var dll = require('./lib/double-linked-list');
+    var DLL = require('./lib/double-linked-list');
 
     var digit1 = list1.tail;
     var digit2 = list2.tail;
 
-    var result = new dll();
+    var result = new DLL();
     var carry = 0;
     var digits_sum;
 
