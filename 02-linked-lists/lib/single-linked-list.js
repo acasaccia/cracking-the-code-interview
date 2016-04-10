@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function SingleLinkedList() {
 
     this.head = null;
     this.tail = null;
